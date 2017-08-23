@@ -30,7 +30,6 @@ public class Signin1 extends HttpServlet {
 			stm.setString(3,pass);
 			stm.setString(4,city);			
 			i=stm.executeUpdate();  
-			System.out.println("Blah blah"+i);
 			RequestDispatcher rs = request.getRequestDispatcher("LogFo1");
             rs.forward(request, response);
 			

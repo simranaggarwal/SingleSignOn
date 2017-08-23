@@ -15,7 +15,6 @@ public class LoginForm1 extends HttpServlet {
         String email=(String)request.getAttribute("email");
         if(att=="123456")
         {
-        	System.out.println("Yeayyyy");
         	Cookie ck1=new Cookie("email",email);  
 	        response.addCookie(ck1);   
 	        RequestDispatcher rs = request.getRequestDispatcher("Welc1");
