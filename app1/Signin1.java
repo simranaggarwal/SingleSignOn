@@ -18,14 +18,13 @@ public class Signin1 extends HttpServlet {
         String pass = request.getParameter("password");
         String city = request.getParameter("city");
         
-        int i;//=0;
+        int i;
 		Connection cn=null;
 		try{
 			Class.forName("oracle.jdbc.driver.OracleDriver"); 
 			cn=DbC1.myConnection();
 			
 			PreparedStatement stm=cn.prepareStatement("insert into application (Name, ID, Password, City) values(?,?,?,?)");
-			//System.out.println(stm);
 			stm.setString(1,name); 
 			stm.setString(2,email);
 			stm.setString(3,pass);

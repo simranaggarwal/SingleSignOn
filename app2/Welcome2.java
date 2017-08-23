@@ -12,12 +12,7 @@ public class Welcome2 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
-        //Connection cn=null;
-        //Statement stmt=null;
-    	/*HttpSession session2=request.getSession(false);
-    	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
-        response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
-        response.setDateHeader("Expires", 0);*/
+        
         Cookie ck2[]=request.getCookies();  
     	if(ck2!= null)
     	{

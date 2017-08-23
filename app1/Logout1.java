@@ -16,17 +16,5 @@ public class Logout1 extends HttpServlet {
         	response.addCookie(ck1);  
         	RequestDispatcher rs = request.getRequestDispatcher("index.html");
             rs.forward(request, response);
-        
-        /*else
-        {
-	        out.println("<html>");
-	    	out.println("<head>");
-	        out.println("<link rel='stylesheet' type='text/css' href='myStyle.css' />");
-	        out.println("</head>");
-	        out.println("<body>");
-	        out.println("<h1>You are successfully logged out!</h1>");
-			out.println("</body>");
-			out.println("</html>");
-        }*/
     }
 }

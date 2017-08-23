@@ -47,12 +47,10 @@ public class AuthServer extends HttpServlet {
 	        if(str=="LogFo1")
 	        {
 	        	out.println("<h1>Log In for Application 1!</h1>");
-	        	//out.println("<button class='submit submit1' type='button' value='LogFo1' name='dom'>Click Me!</button>");
 	        }
 	        else
 	        {
 	        	out.println("<h1>Log In for Application 2!</h1>");
-	        	//out.println("<button class='submit submit1' type='button' value='LogFo2' name='dom'>Click Me!</button>");
 	        }
 	   		out.println("<form name='loginform' method='post' action=authn>");
 			out.println("<table>");
